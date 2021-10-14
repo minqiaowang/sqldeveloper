@@ -1,0 +1,167 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0EBC99CC-4466-42EF-D027-D6281DDBEB60" name="COUNTRIES">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[country dimension table (snowflake)]]></commentInRDBMS>
+<generatorID>1AB1653C-E2DF-84C3-B1A6-A634EB088D2A</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="COUNTRY ID" id="EA8690C1-8C45-25AE-2B69-20C6AD0AACBD">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[primary key]]></commentInRDBMS>
+<generatorID>DEBDA3F7-A32F-C485-C976-EC89981E21EC</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COUNTRY ISO CODE" id="033093EF-BAA4-A6EE-0BD6-AE0CB65CE45B">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>61D4205C-D199-8D21-1067-C51138846827</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COUNTRY NAME" id="43D13ED5-B0C8-96C6-8A42-DEABA0569E13">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[country name]]></commentInRDBMS>
+<generatorID>A010CC89-AD5D-7F2F-8F0A-4F92EACD2B10</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COUNTRY SUBREGION" id="0FC9CB00-C432-90B2-F0E2-125D2D7BC5B4">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. Western Europe, to allow hierarchies]]></commentInRDBMS>
+<generatorID>A91CF6E3-6406-AFDD-112D-C968280EF951</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COUNTRY SUBREGION ID" id="17BB915C-CECF-2165-5BB6-9EC1B3A4E2D4">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>5CB5E549-6127-9779-B897-D1B5A69E5FF7</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COUNTRY REGION" id="A87C6855-752A-CDCC-9F39-2A68A6C3708F">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. Europe, Asia]]></commentInRDBMS>
+<generatorID>E70B5EF4-E847-EDC2-5B64-38F959876E70</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COUNTRY REGION ID" id="F6CCF18D-0D23-0AE8-F3A1-04F3F517FAC4">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>37B12BFA-2597-E525-EE12-C78C629BB2C2</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COUNTRY TOTAL" id="EC0BACA1-0F6D-2F69-297D-4D570D0ECFCD">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>83D1E2F2-11EC-5C68-F098-4B69202125CC</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COUNTRY TOTAL ID" id="E4E02178-0A09-29A6-8DBC-BDFF7FCBDBFC">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>806BCB5F-9486-18CF-D570-784E9AC52524</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COUNTRY NAME HIST" id="218710D8-E508-E12D-1307-690B60E55BCD">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>4610DC3E-AB30-579C-E0D0-2EA0C0799F74</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="201A42BF-0DD7-D4F8-CE91-7A44BC1AAD09" name="COUNTRIES PK">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>AFCE2985-FD8E-FFB5-03F2-BDD9D02B41BF</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EA8690C1-8C45-25AE-2B69-20C6AD0AACBD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

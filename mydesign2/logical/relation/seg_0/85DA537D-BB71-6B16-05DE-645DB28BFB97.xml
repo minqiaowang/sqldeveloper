@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="COSTS_PROMO_FK" directorySegmentName="seg_0" id="85DA537D-BB71-6B16-05DE-645DB28BFB97">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>B3A3BC7E-8BC0-ED8B-D312-E0CBC395A510</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<sourcePk>760ACABE-D01C-DE3F-0D8D-95C8BC461301</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>18BA9921-5C27-21FB-6FF3-FBFE7B700388</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>89710325-7D52-FA4E-9C6C-7719DF894630</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

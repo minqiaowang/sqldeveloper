@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="758720E4-54AB-0F04-89C4-EA772488D43A" name="CHANNELS">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[small dimension table]]></commentInRDBMS>
+<generatorID>12974C6B-6E6E-BAF0-104F-81105E7B367E</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CHANNEL ID" id="BD0AC8FB-E232-745B-18ED-983E502D020A">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[primary key column]]></commentInRDBMS>
+<generatorID>F36508C8-46F9-E885-F0C6-5ECF1ADE918E</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CHANNEL DESC" id="66F352EE-474D-AFA7-B56F-7F5ED7F19459">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. telesales, internet, catalog]]></commentInRDBMS>
+<generatorID>01906A54-E5BF-BCEE-CCB1-33C806F7F843</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CHANNEL CLASS" id="1E6014DC-5FE1-CFFA-3B5B-CF23C6529A8F">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. direct, indirect]]></commentInRDBMS>
+<generatorID>92435129-0B05-B56D-C537-A2F73B203CA3</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CHANNEL CLASS ID" id="6AD68949-774B-2144-5CA8-5A5A8E40EA6C">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>B94EB280-32C2-19D1-C82C-B4A74476411A</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CHANNEL TOTAL" id="26C7489E-1B6E-C9A8-F39C-0AFF4A64E8EB">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>688B2926-0B57-06DB-4F14-50FD5C7234AF</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>13 BYTE</dataTypeSize>
+<ownDataTypeParameters>13 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CHANNEL TOTAL ID" id="C9421DCA-E6D2-23DB-2F01-286E2B97FC46">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>8CF41465-683E-E8CD-133A-4C1D9473A89B</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="484B0CCB-D23B-60D3-5A27-0688B804224F" name="CHANNELS PK">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>E8A6B7D2-8FFD-8105-DBDF-1D45B2256AE7</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BD0AC8FB-E232-745B-18ED-983E502D020A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

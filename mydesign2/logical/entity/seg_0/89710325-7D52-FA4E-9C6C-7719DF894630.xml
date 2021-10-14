@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="89710325-7D52-FA4E-9C6C-7719DF894630" name="COSTS">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>8DC77C39-1F10-20D4-8B54-6B3F0ABD28E2</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PROD ID" id="7C56B421-978C-D131-0D28-FA505B69FF02">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>C645BE94-279F-449A-B266-C797A6AA4E23</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<referedAttribute>809CE547-8780-50F0-EEA2-A4EDD87F6358</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIME ID" id="79876D82-79D1-EF42-1EE0-48A6B4B7E0DE">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>D53D8D01-E93A-6540-4252-9E87B23A0873</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<referedAttribute>4CB4E674-3038-0529-0278-648F0A655DB6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROMO ID" id="E8307442-1DFB-4D5B-1C57-A2F7B336E688">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>85DA537D-BB71-6B16-05DE-645DB28BFB97</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<referedAttribute>7C7FEF66-14C3-D82F-C6AD-09994F552978</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CHANNEL ID" id="E8418323-02A4-689B-99E5-06A0AF0F804D">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>0B64A2F7-8D45-A2DC-E6FA-BF62AE142F7D</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<referedAttribute>BD0AC8FB-E232-745B-18ED-983E502D020A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UNIT COST" id="003A6E12-28FB-C22A-169B-E95F925A5804">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>2539BAEA-D815-46C6-7B59-DA6E09F2DD1C</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UNIT PRICE" id="9C85BAB4-E084-5B87-B8AE-275D329F1A66">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>B472814C-BA00-3403-2C2A-86F2BD66D692</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

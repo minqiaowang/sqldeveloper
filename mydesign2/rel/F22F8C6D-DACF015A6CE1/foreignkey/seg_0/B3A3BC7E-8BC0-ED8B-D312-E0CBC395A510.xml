@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B3A3BC7E-8BC0-ED8B-D312-E0CBC395A510" containerWithKeyObject="8DC77C39-1F10-20D4-8B54-6B3F0ABD28E2" localFKIndex="33840CA3-D56D-C244-3CCF-F90A0AB976D4" name="COSTS_PROMO_FK">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SH</sourceObjSchema>
+<sourceObjName>COSTS_PROMO_FK</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:31 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<referredTableLongName>SH.PROMOTIONS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CB8F4350-999C-C4CC-3E7E-EB265CDF1DDF</referredTableID>
+<keyObject>C4C08755-BE9A-18DE-1AFB-89B29DC3E342</keyObject>
+<referredKeyID>C4C08755-BE9A-18DE-1AFB-89B29DC3E342</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PROMO_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

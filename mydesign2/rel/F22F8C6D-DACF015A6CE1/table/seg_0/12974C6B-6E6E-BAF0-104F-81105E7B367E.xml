@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="12974C6B-6E6E-BAF0-104F-81105E7B367E" schemaObject="B2FBF65F-F421-24A5-E78D-5C73E5940D37" name="CHANNELS">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SH</sourceObjSchema>
+<sourceObjName>CHANNELS</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[small dimension table]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CHANNEL_ID" id="F36508C8-46F9-E885-F0C6-5ECF1ADE918E">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>CHANNELS</sourceObjSchema>
+<sourceObjName>CHANNEL_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[primary key column]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHANNEL_DESC" id="01906A54-E5BF-BCEE-CCB1-33C806F7F843">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>CHANNELS</sourceObjSchema>
+<sourceObjName>CHANNEL_DESC</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. telesales, internet, catalog]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHANNEL_CLASS" id="92435129-0B05-B56D-C537-A2F73B203CA3">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>CHANNELS</sourceObjSchema>
+<sourceObjName>CHANNEL_CLASS</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. direct, indirect]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHANNEL_CLASS_ID" id="B94EB280-32C2-19D1-C82C-B4A74476411A">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>CHANNELS</sourceObjSchema>
+<sourceObjName>CHANNEL_CLASS_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHANNEL_TOTAL" id="688B2926-0B57-06DB-4F14-50FD5C7234AF">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>CHANNELS</sourceObjSchema>
+<sourceObjName>CHANNEL_TOTAL</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>13 BYTE</dataTypeSize>
+<ownDataTypeParameters>13 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CHANNEL_TOTAL_ID" id="8CF41465-683E-E8CD-133A-4C1D9473A89B">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>CHANNELS</sourceObjSchema>
+<sourceObjName>CHANNEL_TOTAL_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E8A6B7D2-8FFD-8105-DBDF-1D45B2256AE7" name="CHANNELS_PK">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SH</sourceObjSchema>
+<sourceObjName>CHANNELS_PK</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:27 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F36508C8-46F9-E885-F0C6-5ECF1ADE918E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

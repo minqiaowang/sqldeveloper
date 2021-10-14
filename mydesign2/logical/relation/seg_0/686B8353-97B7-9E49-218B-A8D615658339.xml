@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SALES_CHANNEL_FK" directorySegmentName="seg_0" id="686B8353-97B7-9E49-218B-A8D615658339">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>272DEDB0-9F9B-9CB1-D265-8EEC363D94F4</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<sourcePk>484B0CCB-D23B-60D3-5A27-0688B804224F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>758720E4-54AB-0F04-89C4-EA772488D43A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>426D23C8-28A2-C35B-174C-D66E9222D3FE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

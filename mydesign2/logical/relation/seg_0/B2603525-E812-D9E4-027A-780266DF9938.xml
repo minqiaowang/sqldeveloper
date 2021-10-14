@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SALES_PROMO_FK" directorySegmentName="seg_0" id="B2603525-E812-D9E4-027A-780266DF9938">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>11502DAD-C9E3-64EE-3C71-772FD988C439</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<sourcePk>760ACABE-D01C-DE3F-0D8D-95C8BC461301</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>18BA9921-5C27-21FB-6FF3-FBFE7B700388</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>426D23C8-28A2-C35B-174C-D66E9222D3FE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
