@@ -1,0 +1,558 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B2C5F0CA-C830-0A64-0937-89DB0CF6FBF2" name="TIMES">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Time dimension table to support multiple hierarchies and materialized views]]></commentInRDBMS>
+<generatorID>7DFA58C1-033C-FEC3-E8EC-92C01100F70F</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TIME ID" id="4CB4E674-3038-0529-0278-648F0A655DB6">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[primary key; day date, finest granularity, CORRECT ORDER]]></commentInRDBMS>
+<generatorID>AC92510F-8D9E-B7E5-56CA-9970C60B9AB8</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAY NAME" id="215F06B3-DE18-9120-B67B-B1E13C116044">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Monday to Sunday, repeating]]></commentInRDBMS>
+<generatorID>F885CBDD-AC95-32DE-8F2D-B387D36EB7DB</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAY NUMBER IN WEEK" id="3A7259E8-CE5E-F45B-F82B-9449F5E049A5">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 7, repeating]]></commentInRDBMS>
+<generatorID>F25FB0F2-3E1C-DFD7-CFB0-E70D64CC3987</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAY NUMBER IN MONTH" id="D40F127F-89C1-F686-7043-C1D3B445343E">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 31, repeating]]></commentInRDBMS>
+<generatorID>0AE22B07-9CFD-58C6-2C2E-EFE68EA91031</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CALENDAR WEEK NUMBER" id="F885553B-532F-3A11-566A-08439A3B5316">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 53, repeating]]></commentInRDBMS>
+<generatorID>D8337951-1ABD-5175-44B9-ACF44B225D94</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FISCAL WEEK NUMBER" id="43A65FCD-41AF-55FE-76BE-36CD31C2D5F7">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 53, repeating]]></commentInRDBMS>
+<generatorID>BC4EA9FD-AE1F-AED2-27C5-2601FDD5BAA6</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WEEK ENDING DAY" id="72F704AC-F38F-8551-BAAD-7CECB439D7CD">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[date of last day in week, CORRECT ORDER]]></commentInRDBMS>
+<generatorID>CE89A4C4-0FF8-EE86-2371-DDC91995AF46</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="WEEK ENDING DAY ID" id="20E30922-0275-1F40-B68B-D527EBECD64D">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>F290C59F-3706-C84B-0872-4C5CA0CF122B</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CALENDAR MONTH NUMBER" id="507734FB-3477-7866-ED75-C56E8D6AF364">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 12, repeating]]></commentInRDBMS>
+<generatorID>30AB0027-A21A-D201-6D38-01EC78DBBA36</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FISCAL MONTH NUMBER" id="5CB7CA8A-FDAE-CF58-5934-7123AD098FB7">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 12, repeating]]></commentInRDBMS>
+<generatorID>7DEA2BAB-207E-A52C-57E1-F55E99611FA6</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CALENDAR MONTH DESC" id="E9D9D8AD-47EB-CC57-90D1-65762744AD6E">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 1998-01, CORRECT ORDER]]></commentInRDBMS>
+<generatorID>EB9B4BE6-F20A-A8F8-E2BF-8CDD6E083F4C</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CALENDAR MONTH ID" id="EC274D44-CD28-B455-AE13-0DD3A376ACEB">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>E976E00A-B293-E207-4DCC-11CD093A4E28</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FISCAL MONTH DESC" id="59C6C441-1653-3BFA-FE07-730D026206AC">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 1998-01, CORRECT ORDER]]></commentInRDBMS>
+<generatorID>AFE15F22-C6F7-8B1F-38B4-93764F336301</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FISCAL MONTH ID" id="DBD25D7B-2D06-2360-AAC1-FBEBE76F7181">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>F9B5B3D0-5D2D-A4EA-2C9A-5B33DC9613EB</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAYS IN CAL MONTH" id="AABFE801-E3C3-6427-3DD9-C7F44124A806">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 28,31, repeating]]></commentInRDBMS>
+<generatorID>F75ABEA7-5888-6DEC-BE54-7C00BBDE0895</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAYS IN FIS MONTH" id="5839D1AC-E6CE-916E-B5A3-FD0D8451AB6A">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 25,32, repeating]]></commentInRDBMS>
+<generatorID>B9CA7A20-23E1-6986-510F-109B28EA6C40</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="END OF CAL MONTH" id="6ED58F40-C588-0CD6-D323-DCE51A1D7FE6">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[last day of calendar month]]></commentInRDBMS>
+<generatorID>DA427EBB-C2D2-EDA5-08A7-8914BAE6EC43</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="END OF FIS MONTH" id="4BF00A4C-266D-9A22-3108-48BFF9B6F8F8">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[last day of fiscal month]]></commentInRDBMS>
+<generatorID>8013E670-7596-AC9A-75C9-86A29A17E28E</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CALENDAR MONTH NAME" id="15CED906-75DD-81F3-C2B2-FDBFB3EE46F1">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[January to December, repeating]]></commentInRDBMS>
+<generatorID>3670EBA5-F48C-80A2-183F-99E30CA9D4BA</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FISCAL MONTH NAME" id="2C253B45-F788-FD26-5C6D-F769813FAE02">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[January to December, repeating]]></commentInRDBMS>
+<generatorID>4D933894-E5EE-9846-4724-D20E93A01895</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CALENDAR QUARTER DESC" id="0740247D-A1A1-7980-AB60-5FA932E91692">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 1998-Q1, CORRECT ORDER]]></commentInRDBMS>
+<generatorID>353724F4-F4F8-956D-5DD2-A6E49CCFD6FD</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CALENDAR QUARTER ID" id="59E14C6A-659C-9D79-268B-F4D332EB06A8">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>109FE54B-90A4-4F26-F13E-6349CCA4DEAF</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FISCAL QUARTER DESC" id="28FC6B37-E8B0-4BB2-AC7B-155432072450">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 1999-Q3, CORRECT ORDER]]></commentInRDBMS>
+<generatorID>46F8B73E-0947-A379-94F8-B4071FE4BF3A</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FISCAL QUARTER ID" id="D1C2216C-F6C7-1C8F-CE39-D5E8B1BC981E">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>4A979A38-E1A0-3079-6DC4-F48E36E3174D</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAYS IN CAL QUARTER" id="79B45006-C86D-4168-41CF-844BB0078EB0">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 88,90, repeating]]></commentInRDBMS>
+<generatorID>6E22B14B-3A49-9198-2A7E-6E819A6240C0</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAYS IN FIS QUARTER" id="3776D5D3-DEB2-C39D-678A-9FF55F39196B">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 88,90, repeating]]></commentInRDBMS>
+<generatorID>4FEFC815-03CC-C1EB-92BA-B63AC2CCDC68</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="END OF CAL QUARTER" id="AF5DC3DA-82FA-ACA6-1C9C-FE0F97418128">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[last day of calendar quarter]]></commentInRDBMS>
+<generatorID>2D3F98C3-FCE8-8D2F-6B1C-19B3FF375055</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="END OF FIS QUARTER" id="68223E63-756F-C48F-2811-42184DE42D59">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[last day of fiscal quarter]]></commentInRDBMS>
+<generatorID>98AEF67E-B590-DE3C-2876-AF948B0B5D2D</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CALENDAR QUARTER NUMBER" id="A07AAA01-1A09-B5B2-F663-E9D7E614501C">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 4, repeating]]></commentInRDBMS>
+<generatorID>45832246-A89C-71FF-D9FB-BCA4D9CC73A1</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FISCAL QUARTER NUMBER" id="22A3514A-1413-8F95-F965-1080E980A0C7">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 4, repeating]]></commentInRDBMS>
+<generatorID>5C3BEAD2-9DE4-7FE8-CFCA-F6CFAE549647</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CALENDAR YEAR" id="CDD0F252-90C3-953B-AD4C-ACC2BB95D094">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 1999, CORRECT ORDER]]></commentInRDBMS>
+<generatorID>0EFDCC2F-B9E2-2A61-7536-3D00FB82A22E</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CALENDAR YEAR ID" id="B930786C-855F-A8A2-47BD-CDD1B0389010">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>80E4B789-0CE5-150D-A7BC-893B1DB35747</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FISCAL YEAR" id="6C630BAE-D2BB-BE9F-2E07-F98CB69DBC68">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 1999, CORRECT ORDER]]></commentInRDBMS>
+<generatorID>496A4538-54B6-BCC2-521A-072FAB857052</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FISCAL YEAR ID" id="4EE720DB-389B-2F44-1698-71746A66BD66">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>7E5C6902-CC72-82D4-E56E-A93388034903</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAYS IN CAL YEAR" id="51F9465C-C114-8296-A597-10ADDFF02F61">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[365,366 repeating]]></commentInRDBMS>
+<generatorID>18026096-5C3D-7A5E-49FB-3FD5BB3358AB</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAYS IN FIS YEAR" id="C8DA0B21-8404-B341-311D-5D3F0D477C64">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 355,364, repeating]]></commentInRDBMS>
+<generatorID>AA0AE3A9-A90F-77D5-D513-82262EEAA358</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="END OF CAL YEAR" id="41F1B7BA-DC72-4D24-CAF2-2D91893C5970">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[last day of cal year]]></commentInRDBMS>
+<generatorID>32E5B4EA-5710-F960-EF96-329E6E19E5A3</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="END OF FIS YEAR" id="D2E2B483-8E0F-30D6-79EA-933B3825602B">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[last day of fiscal year]]></commentInRDBMS>
+<generatorID>666B16D5-8E9B-73D2-16D3-2B16383A50D2</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EB354CEE-1AFB-374E-605F-307192D456C5" name="TIMES PK">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 12:00:32 UTC</createdTime>
+<generatorID>CA55DAF2-726D-FA36-FA79-CF9DC4B08D61</generatorID>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<engineerTo>
+<item key="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4CB4E674-3038-0529-0278-648F0A655DB6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

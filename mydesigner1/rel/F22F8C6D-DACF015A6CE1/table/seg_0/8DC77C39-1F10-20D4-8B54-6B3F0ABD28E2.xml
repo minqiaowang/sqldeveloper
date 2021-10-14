@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8DC77C39-1F10-20D4-8B54-6B3F0ABD28E2" schemaObject="B2FBF65F-F421-24A5-E78D-5C73E5940D37" name="COSTS">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SH</sourceObjSchema>
+<sourceObjName>COSTS</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:19 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROD_ID" id="DE967890-4CB5-DF4A-54C8-BE74CC18540D">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COSTS</sourceObjSchema>
+<sourceObjName>PROD_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A1131AD0-5FD9-6464-2335-8B4ABA521A8D" referredColumn="18F8BF23-8BE3-2D2E-CB3A-FA9840DDD4B5"/>
+</associations>
+</Column>
+<Column name="TIME_ID" id="03B895BF-CD60-C8F8-21D2-FBC0E4DE0255">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COSTS</sourceObjSchema>
+<sourceObjName>TIME_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1B2B600-333C-9154-D0EF-16316A4CDD55" referredColumn="AC92510F-8D9E-B7E5-56CA-9970C60B9AB8"/>
+</associations>
+</Column>
+<Column name="PROMO_ID" id="E0165089-C4D0-94E5-EAE4-0F922F3D9141">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COSTS</sourceObjSchema>
+<sourceObjName>PROMO_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B3A3BC7E-8BC0-ED8B-D312-E0CBC395A510" referredColumn="F5EF7EE1-7227-55D9-5724-39539DEE558B"/>
+</associations>
+</Column>
+<Column name="CHANNEL_ID" id="D72FCC67-4229-C322-2239-7AC96F239A7B">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COSTS</sourceObjSchema>
+<sourceObjName>CHANNEL_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1D923AD3-93AE-4A4F-2B24-DEBA88E09912" referredColumn="F36508C8-46F9-E885-F0C6-5ECF1ADE918E"/>
+</associations>
+</Column>
+<Column name="UNIT_COST" id="2539BAEA-D815-46C6-7B59-DA6E09F2DD1C">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COSTS</sourceObjSchema>
+<sourceObjName>UNIT_COST</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIT_PRICE" id="B472814C-BA00-3403-2C2A-86F2BD66D692">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COSTS</sourceObjSchema>
+<sourceObjName>UNIT_PRICE</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="99FA51F7-C2D9-DC17-7EBF-E7F32E86FC66" name="COSTS_CHANNEL_FK">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:31 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D72FCC67-4229-C322-2239-7AC96F239A7B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6773A288-D397-03A2-61BA-44D2334F7AB8" name="COSTS_PRODUCT_FK">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:31 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE967890-4CB5-DF4A-54C8-BE74CC18540D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33840CA3-D56D-C244-3CCF-F90A0AB976D4" name="COSTS_PROMO_FK">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:31 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0165089-C4D0-94E5-EAE4-0F922F3D9141"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D882CFAC-D13C-4C98-722F-E4F4369D427A" name="COSTS_TIME_FK">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:31 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03B895BF-CD60-C8F8-21D2-FBC0E4DE0255"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

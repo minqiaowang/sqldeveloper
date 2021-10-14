@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CB8F4350-999C-C4CC-3E7E-EB265CDF1DDF" schemaObject="B2FBF65F-F421-24A5-E78D-5C73E5940D37" name="PROMOTIONS">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SH</sourceObjSchema>
+<sourceObjName>PROMOTIONS</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[dimension table without a PK-FK relationship with the facts table, to show outer join functionality]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROMO_ID" id="F5EF7EE1-7227-55D9-5724-39539DEE558B">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>PROMOTIONS</sourceObjSchema>
+<sourceObjName>PROMO_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[primary key column]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROMO_NAME" id="0B5AF17D-671C-6051-70A1-1352919C14AC">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>PROMOTIONS</sourceObjSchema>
+<sourceObjName>PROMO_NAME</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[promotion description]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROMO_SUBCATEGORY" id="A000DA29-7435-6C96-2EB0-3BF1C2F168A3">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>PROMOTIONS</sourceObjSchema>
+<sourceObjName>PROMO_SUBCATEGORY</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[enables to investigate promotion hierarchies]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROMO_SUBCATEGORY_ID" id="FB26FDA9-2DEB-423C-2D1B-C8125293FA2B">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>PROMOTIONS</sourceObjSchema>
+<sourceObjName>PROMO_SUBCATEGORY_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROMO_CATEGORY" id="907B0D52-9BE7-F1C9-806E-F027CC208D74">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>PROMOTIONS</sourceObjSchema>
+<sourceObjName>PROMO_CATEGORY</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[promotion category]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROMO_CATEGORY_ID" id="C093A69A-725F-2A1B-2F37-40ADD40DF55B">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>PROMOTIONS</sourceObjSchema>
+<sourceObjName>PROMO_CATEGORY_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROMO_COST" id="76B39261-0A06-7882-21D5-34A8697DA00C">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>PROMOTIONS</sourceObjSchema>
+<sourceObjName>PROMO_COST</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[promotion cost, to do promotion effect calculations]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROMO_BEGIN_DATE" id="3AD49142-26F8-B6B2-05CF-EB83AE125252">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>PROMOTIONS</sourceObjSchema>
+<sourceObjName>PROMO_BEGIN_DATE</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[promotion begin day]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROMO_END_DATE" id="5A8A2FE9-6D3A-08A4-B7EB-47660E48DB72">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>PROMOTIONS</sourceObjSchema>
+<sourceObjName>PROMO_END_DATE</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[promotion end day]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROMO_TOTAL" id="48ABFD3B-08AB-6637-7AE1-B3476D342954">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>PROMOTIONS</sourceObjSchema>
+<sourceObjName>PROMO_TOTAL</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROMO_TOTAL_ID" id="F977B528-EA17-E2C8-0B63-39CD610D9746">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>PROMOTIONS</sourceObjSchema>
+<sourceObjName>PROMO_TOTAL_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C4C08755-BE9A-18DE-1AFB-89B29DC3E342" name="PROMO_PK">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SH</sourceObjSchema>
+<sourceObjName>PROMO_PK</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:27 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5EF7EE1-7227-55D9-5724-39539DEE558B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

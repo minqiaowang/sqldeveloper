@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PRODUCTS" directorySegmentName="seg_0" id="481A9212-0D83-B04B-1AC9-DB6F7BC51B3F">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:19 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<schemaObject>B2FBF65F-F421-24A5-E78D-5C73E5940D37</schemaObject>
+<dataSegmentCompression>YES</dataSegmentCompression>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>03F978FE-ABCA-8683-3C41-EB362CC6C61E</segment>
+<tableSpace>6B9B5073-2402-ECA5-8A78-3ADB5BB99494</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<compressionType>QUERY HIGH</compressionType>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PROD_CATEGORY_ID" id="003D366B-9902-E14C-67B2-A9F9342A48B4">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_EFF_TO" id="14510F26-146C-3021-2F3F-464FAD657E31">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_ID" id="18F8BF23-8BE3-2D2E-CB3A-FA9840DDD4B5">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_STATUS" id="233D1F7A-BFAF-20B6-25F0-1813D4353540">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_TOTAL_ID" id="2695507C-8963-8360-FD05-9B359D3AFA5D">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_SUBCATEGORY" id="3E3F57CD-C68D-EB27-078F-095DF58F8097">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_CATEGORY_DESC" id="3F4C5594-4DB3-10C2-C4E5-CB4D037B49D7">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_SRC_ID" id="58EAB4F3-ACC0-7D28-7D1F-C4DB7FC398FE">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_DESC" id="668888BC-2FB3-820E-D0BF-33800615CD6C">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_EFF_FROM" id="68F65DDF-9C6B-3494-3BDC-5F5DDB98B2FD">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_PACK_SIZE" id="6D9BD272-5E74-495E-6EF7-D580AC72D7B6">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_UNIT_OF_MEASURE" id="79865C11-B673-3DFF-18F8-77EBA40F2668">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_CATEGORY" id="896256D8-2A61-E7B5-A38E-8EBD982C79C5">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUPPLIER_ID" id="8E825746-CAF4-7144-CD12-E46C61766AE6">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_MIN_PRICE" id="8EF5C829-9BA0-AEDF-698E-91F08451F0D3">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_SUBCATEGORY_ID" id="A2702284-C3A4-C0A1-BEC1-D5CA527DB300">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_WEIGHT_CLASS" id="AB001388-46FC-583E-1229-8AF399C5202F">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_SUBCATEGORY_DESC" id="ADFBD6B0-E039-C121-F06C-5F4BC4EE5120">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_NAME" id="B41EB896-99F6-CDD0-28FB-DB21653FA3B9">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_TOTAL" id="B6373FF2-0367-B426-5C85-684E8887FDFC">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_VALID" id="B6FBEA74-C57E-EFEF-ABBE-B6F130E06546">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROD_LIST_PRICE" id="DDFE439D-5FC0-682E-2B44-8D6D96F0B501">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRODUCTS_PK" id="7C367550-5181-CD5A-8346-79EAE7C4119D">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:27 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<tableSpace>6B9B5073-2402-ECA5-8A78-3ADB5BB99494</tableSpace>
+<enable>NO</enable>
+<indexSort>SORTED</indexSort>
+<rely>YES</rely>
+<validate>NO</validate>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

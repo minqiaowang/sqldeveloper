@@ -1,0 +1,553 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7DFA58C1-033C-FEC3-E8EC-92C01100F70F" schemaObject="B2FBF65F-F421-24A5-E78D-5C73E5940D37" name="TIMES">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SH</sourceObjSchema>
+<sourceObjName>TIMES</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Time dimension table to support multiple hierarchies and materialized views]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TIME_ID" id="AC92510F-8D9E-B7E5-56CA-9970C60B9AB8">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>TIME_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[primary key; day date, finest granularity, CORRECT ORDER]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAY_NAME" id="F885CBDD-AC95-32DE-8F2D-B387D36EB7DB">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>DAY_NAME</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Monday to Sunday, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAY_NUMBER_IN_WEEK" id="F25FB0F2-3E1C-DFD7-CFB0-E70D64CC3987">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>DAY_NUMBER_IN_WEEK</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 7, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAY_NUMBER_IN_MONTH" id="0AE22B07-9CFD-58C6-2C2E-EFE68EA91031">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>DAY_NUMBER_IN_MONTH</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 31, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALENDAR_WEEK_NUMBER" id="D8337951-1ABD-5175-44B9-ACF44B225D94">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>CALENDAR_WEEK_NUMBER</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 53, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FISCAL_WEEK_NUMBER" id="BC4EA9FD-AE1F-AED2-27C5-2601FDD5BAA6">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>FISCAL_WEEK_NUMBER</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 53, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WEEK_ENDING_DAY" id="CE89A4C4-0FF8-EE86-2371-DDC91995AF46">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>WEEK_ENDING_DAY</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[date of last day in week, CORRECT ORDER]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WEEK_ENDING_DAY_ID" id="F290C59F-3706-C84B-0872-4C5CA0CF122B">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>WEEK_ENDING_DAY_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALENDAR_MONTH_NUMBER" id="30AB0027-A21A-D201-6D38-01EC78DBBA36">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>CALENDAR_MONTH_NUMBER</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 12, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FISCAL_MONTH_NUMBER" id="7DEA2BAB-207E-A52C-57E1-F55E99611FA6">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>FISCAL_MONTH_NUMBER</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 12, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALENDAR_MONTH_DESC" id="EB9B4BE6-F20A-A8F8-E2BF-8CDD6E083F4C">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>CALENDAR_MONTH_DESC</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 1998-01, CORRECT ORDER]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALENDAR_MONTH_ID" id="E976E00A-B293-E207-4DCC-11CD093A4E28">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>CALENDAR_MONTH_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FISCAL_MONTH_DESC" id="AFE15F22-C6F7-8B1F-38B4-93764F336301">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>FISCAL_MONTH_DESC</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 1998-01, CORRECT ORDER]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FISCAL_MONTH_ID" id="F9B5B3D0-5D2D-A4EA-2C9A-5B33DC9613EB">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>FISCAL_MONTH_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAYS_IN_CAL_MONTH" id="F75ABEA7-5888-6DEC-BE54-7C00BBDE0895">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>DAYS_IN_CAL_MONTH</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 28,31, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAYS_IN_FIS_MONTH" id="B9CA7A20-23E1-6986-510F-109B28EA6C40">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>DAYS_IN_FIS_MONTH</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 25,32, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_OF_CAL_MONTH" id="DA427EBB-C2D2-EDA5-08A7-8914BAE6EC43">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>END_OF_CAL_MONTH</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[last day of calendar month]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_OF_FIS_MONTH" id="8013E670-7596-AC9A-75C9-86A29A17E28E">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>END_OF_FIS_MONTH</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[last day of fiscal month]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALENDAR_MONTH_NAME" id="3670EBA5-F48C-80A2-183F-99E30CA9D4BA">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>CALENDAR_MONTH_NAME</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[January to December, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FISCAL_MONTH_NAME" id="4D933894-E5EE-9846-4724-D20E93A01895">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>FISCAL_MONTH_NAME</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[January to December, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>9 BYTE</dataTypeSize>
+<ownDataTypeParameters>9 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALENDAR_QUARTER_DESC" id="353724F4-F4F8-956D-5DD2-A6E49CCFD6FD">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>CALENDAR_QUARTER_DESC</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 1998-Q1, CORRECT ORDER]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALENDAR_QUARTER_ID" id="109FE54B-90A4-4F26-F13E-6349CCA4DEAF">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>CALENDAR_QUARTER_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FISCAL_QUARTER_DESC" id="46F8B73E-0947-A379-94F8-B4071FE4BF3A">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>FISCAL_QUARTER_DESC</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 1999-Q3, CORRECT ORDER]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FISCAL_QUARTER_ID" id="4A979A38-E1A0-3079-6DC4-F48E36E3174D">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>FISCAL_QUARTER_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAYS_IN_CAL_QUARTER" id="6E22B14B-3A49-9198-2A7E-6E819A6240C0">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>DAYS_IN_CAL_QUARTER</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 88,90, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAYS_IN_FIS_QUARTER" id="4FEFC815-03CC-C1EB-92BA-B63AC2CCDC68">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>DAYS_IN_FIS_QUARTER</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 88,90, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_OF_CAL_QUARTER" id="2D3F98C3-FCE8-8D2F-6B1C-19B3FF375055">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>END_OF_CAL_QUARTER</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[last day of calendar quarter]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_OF_FIS_QUARTER" id="98AEF67E-B590-DE3C-2876-AF948B0B5D2D">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>END_OF_FIS_QUARTER</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[last day of fiscal quarter]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALENDAR_QUARTER_NUMBER" id="45832246-A89C-71FF-D9FB-BCA4D9CC73A1">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>CALENDAR_QUARTER_NUMBER</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 4, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FISCAL_QUARTER_NUMBER" id="5C3BEAD2-9DE4-7FE8-CFCA-F6CFAE549647">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>FISCAL_QUARTER_NUMBER</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[1 to 4, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALENDAR_YEAR" id="0EFDCC2F-B9E2-2A61-7536-3D00FB82A22E">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>CALENDAR_YEAR</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 1999, CORRECT ORDER]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALENDAR_YEAR_ID" id="80E4B789-0CE5-150D-A7BC-893B1DB35747">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>CALENDAR_YEAR_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FISCAL_YEAR" id="496A4538-54B6-BCC2-521A-072FAB857052">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>FISCAL_YEAR</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 1999, CORRECT ORDER]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FISCAL_YEAR_ID" id="7E5C6902-CC72-82D4-E56E-A93388034903">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>FISCAL_YEAR_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAYS_IN_CAL_YEAR" id="18026096-5C3D-7A5E-49FB-3FD5BB3358AB">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>DAYS_IN_CAL_YEAR</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[365,366 repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DAYS_IN_FIS_YEAR" id="AA0AE3A9-A90F-77D5-D513-82262EEAA358">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>DAYS_IN_FIS_YEAR</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. 355,364, repeating]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_OF_CAL_YEAR" id="32E5B4EA-5710-F960-EF96-329E6E19E5A3">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>END_OF_CAL_YEAR</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[last day of cal year]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_OF_FIS_YEAR" id="666B16D5-8E9B-73D2-16D3-2B16383A50D2">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>TIMES</sourceObjSchema>
+<sourceObjName>END_OF_FIS_YEAR</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[last day of fiscal year]]></commentInRDBMS>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA55DAF2-726D-FA36-FA79-CF9DC4B08D61" name="TIMES_PK">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SH</sourceObjSchema>
+<sourceObjName>TIMES_PK</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-14 11:58:27 UTC</createdTime>
+<ownerDesignName>mydesigner1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC92510F-8D9E-B7E5-56CA-9970C60B9AB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
