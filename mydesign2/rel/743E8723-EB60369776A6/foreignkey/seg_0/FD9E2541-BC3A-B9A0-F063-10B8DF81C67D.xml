@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FD9E2541-BC3A-B9A0-F063-10B8DF81C67D" containerWithKeyObject="64242158-A570-2738-A754-76D5777B17E8" localFKIndex="0BCEF90A-AE05-29EB-C8B8-EC0A3D270FCB" name="SALES_CHANNELS_FK">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SH</sourceObjSchema>
+<sourceObjName>SALES_CHANNEL_FK</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:28 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<referredTableLongName>SH.CHANNELS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2C64D13F-3C7E-13A1-0E13-22FE860C30BA</referredTableID>
+<keyObject>1AC8844E-E8C7-6E7A-D099-92B46374D25E</keyObject>
+<referredKeyID>1AC8844E-E8C7-6E7A-D099-92B46374D25E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CHANNEL_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

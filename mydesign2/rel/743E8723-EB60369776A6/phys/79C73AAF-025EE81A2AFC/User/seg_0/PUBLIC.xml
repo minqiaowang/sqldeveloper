@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="PUBLIC" directorySegmentName="seg_0" id="PUBLIC">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:16 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<nullInstance>true</nullInstance>
+<storableNullInstance>true</storableNullInstance>
+<permissions>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions1" id="45097009-09EE-E3A5-1E6C-6650707A488C">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:31 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<privileges>READ</privileges>
+<table>2192FC3C-6321-A93D-B746-F28134D8D89B</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions2" id="D476AC03-5052-BB60-9B10-563AC8F060EF">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:31 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<privileges>READ</privileges>
+<table>A7040762-7A33-5C8D-B84B-1CE17877A221</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions3" id="A743DD81-AEE0-BBFE-5DA4-826FC582B41C">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:31 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<privileges>READ</privileges>
+<table>5F4F0AE1-FE79-E6A9-A093-DA15205B7779</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions4" id="22B3ED66-3B2F-A9AC-5A96-B69020742A97">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:31 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<privileges>READ</privileges>
+<table>78D6408C-2975-DB60-F03B-DC66731CD512</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions5" id="83B91A81-6155-95FA-F29F-140F32412105">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:31 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<privileges>READ</privileges>
+<table>403F0000-31E5-F53C-0188-68C3AF80F7B3</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions6" id="00C079A5-E17A-2953-7177-79B494ED0BED">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:31 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<privileges>READ</privileges>
+<table>64242158-A570-2738-A754-76D5777B17E8</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions7" id="3B36D3D9-7BC4-9A0A-B833-67A226893DE3">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:31 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<privileges>READ</privileges>
+<table>2C64D13F-3C7E-13A1-0E13-22FE860C30BA</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions8" id="287ECE41-C1FF-DE23-6C7B-55201123C432">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:31 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<privileges>READ</privileges>
+<table>CF4707FB-9ABB-3621-291B-209C248875B4</table>
+</Permission>
+<Permission class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PermissionsOraclev10g" name="Permissions9" id="10C1B278-B166-FBCF-72B8-B09242C73C23">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:31 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<privileges>READ</privileges>
+<table>DF4499B3-75AE-3197-8D7B-4D7869240285</table>
+</Permission>
+</permissions>
+</UserOraclev10g>

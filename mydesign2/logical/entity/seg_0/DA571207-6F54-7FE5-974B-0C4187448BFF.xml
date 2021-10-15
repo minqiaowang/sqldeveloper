@@ -1,0 +1,377 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DA571207-6F54-7FE5-974B-0C4187448BFF" name="CUSTOMERS">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[dimension table]]></commentInRDBMS>
+<generatorID>CF4707FB-9ABB-3621-291B-209C248875B4</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CUST ID" id="14F9C638-246F-97D8-EBFA-A1927CDFF597">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[primary key]]></commentInRDBMS>
+<generatorID>BA114C96-FE83-8351-BE41-34DD725F3B0E</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST FIRST NAME" id="8F7DC594-B456-5279-9E62-A19FF31B4636">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[first name of the customer]]></commentInRDBMS>
+<generatorID>B456D44B-C973-A757-B3D7-A335825F000B</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST LAST NAME" id="E6FEB492-4BE6-7062-7846-5652BAAB8B0F">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[last name of the customer]]></commentInRDBMS>
+<generatorID>A4A39A47-7E6C-7771-7625-F95E4837F555</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST GENDER" id="B5514538-8544-C3C5-C373-9149031A9BF6">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[gender; low cardinality attribute]]></commentInRDBMS>
+<generatorID>193BF73A-86E5-EF89-1A3A-67E2A35D5F19</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST YEAR OF BIRTH" id="B9248C41-BA58-A85B-27EE-897121E8FF83">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer year of birth]]></commentInRDBMS>
+<generatorID>7348B0D7-7556-5754-4209-500FA5CAB35D</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST MARITAL STATUS" id="98E0AE85-85D4-3CDC-7C64-C57E73518B9C">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer marital status; low cardinality attribute]]></commentInRDBMS>
+<generatorID>1107197A-EDC8-C7BB-EEF1-622A2112F294</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST STREET ADDRESS" id="43D2FFD0-0F80-4B39-7D9D-FB7D65A74279">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer street address]]></commentInRDBMS>
+<generatorID>3B0E667B-C93F-F1D2-C416-C0C4EDDC15C5</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST POSTAL CODE" id="1A9E5FC1-7754-CCD5-C0FC-FB3BF9B805B2">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[postal code of the customer]]></commentInRDBMS>
+<generatorID>38402F39-F636-02B5-1379-2C21C7C84F40</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST CITY" id="BA20E5A5-9D0D-FB4F-EB8D-E942112B46A8">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[city where the customer lives]]></commentInRDBMS>
+<generatorID>F4F6E09B-44DD-C27C-B08C-6DA631CCA6BE</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST CITY ID" id="8694BD5A-A5C5-E3E0-8447-BB4D45E60159">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>2DD96663-251F-6E7D-3534-D3AB8B05F774</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST STATE PROVINCE" id="2CD8EBCF-59A2-AE46-E2C5-14E79EC99B40">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer geography: state or province]]></commentInRDBMS>
+<generatorID>D805B1E8-4685-73FE-C168-F9F2EBC89474</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST STATE PROVINCE ID" id="2466FDCB-D91F-1633-2FE5-87D3FA2DFFD8">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>4C3FFD3A-D70E-C4CF-D70E-B5EDA7A35244</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COUNTRY ID" id="3BE30D83-7FA0-A313-0E73-46C4CF3B1D8D">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[foreign key to the countries table (snowflake)]]></commentInRDBMS>
+<generatorID>940D90CA-7DB8-9E81-BB83-A16DF3D499E8</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<referedAttribute>F58F1D10-C611-FAB3-B98C-9FCBDE429624</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST MAIN PHONE NUMBER" id="5F20619E-FE9C-0549-B479-1C5E70E2F084">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer main phone number]]></commentInRDBMS>
+<generatorID>AB43522E-BC38-D484-99D1-98DD2B675D00</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST INCOME LEVEL" id="698C6D86-3628-38CE-8543-5527A4477815">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer income level]]></commentInRDBMS>
+<generatorID>EDB1F850-4EDF-2D80-3B02-28636A4B0289</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST CREDIT LIMIT" id="BEF54E74-54C1-EC1C-F38B-F0F9F4AF5C3C">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer credit limit]]></commentInRDBMS>
+<generatorID>6C5F5B15-46E0-4029-ED39-6A7E23D38A18</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST EMAIL" id="342BF1DB-E12B-2081-B54A-59D5A69438F1">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer email id]]></commentInRDBMS>
+<generatorID>C29A6DD2-75BF-82F9-A420-D4109E272937</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST TOTAL" id="9D5706B6-4631-ED54-85F5-F98E19DC7C2C">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>A9BBF9B5-1348-C869-BEB7-2E4BFDA06A2D</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>14 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST TOTAL ID" id="92D6D7A5-DAD3-2524-BFCB-8A5228EA3294">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>34622594-E040-342C-F36D-F7063378E3FE</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST SRC ID" id="1CA07D34-905E-EB0F-1E35-CEDDE8A11DA6">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>BB46B8B0-0EB4-D800-D0E4-A7CAE8577DCD</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST EFF FROM" id="3F3EAE02-2BFD-0960-AB00-A101380F98FE">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>061863E7-6FE8-C7E7-9CFB-F777F87A045F</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST EFF TO" id="AADC1EC4-78C1-9239-52F5-174EDAB57D07">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>59ED2BA8-8C29-E78D-53AE-B4DAF305479A</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST VALID" id="9507D259-9668-1C79-8E2B-6F5C0881E44F">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>D9BD0136-AD76-14D7-26F8-AC35275AE233</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E5AEC7E7-6186-807D-B6B0-1EE27C33F990" name="CUSTOMERS PK">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>38143FB9-FC95-AA99-13F2-CAC280F467AE</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>14F9C638-246F-97D8-EBFA-A1927CDFF597</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

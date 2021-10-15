@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="903C124E-95A5-C491-F388-2882524A9421" name="COSTS">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>78D6408C-2975-DB60-F03B-DC66731CD512</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PROD ID" id="6425BE61-4B62-D4F3-EB49-F8F036BDFE57">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>E51C8FBB-F7CF-3265-71AC-F08790C5DD10</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<referedAttribute>452E9EA3-43ED-68D4-72E8-07FC078D6007</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIME ID" id="FBA1C4B1-3F3C-DFD7-F9DA-41A1D2D4C1B2">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>8633C865-1DF6-1EFA-FD3E-F5A0704A5EA8</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<referedAttribute>A4D8C0D7-2578-7E94-347C-63A469FE1A94</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CHANNEL ID" id="E2F58631-1A17-66F9-F44D-64FEDC32512B">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>E712023C-BAF7-DC34-F914-BD8B452805BB</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<referedAttribute>47B755F0-579D-25D8-1EF2-21A5559A85E2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UNIT COST" id="A04DB15E-4644-36A5-1728-7AA1E5F20230">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>85C6DBB4-328E-F85C-A53C-176BE7574D81</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UNIT PRICE" id="B9337A8F-96CA-6696-E16F-402D46FBE526">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>7179412E-4D30-50D8-50AD-AFE5FFD14976</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

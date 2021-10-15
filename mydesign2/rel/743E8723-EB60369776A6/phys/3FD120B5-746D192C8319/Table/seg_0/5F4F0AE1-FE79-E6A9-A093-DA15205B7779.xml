@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="COUNTRIES" directorySegmentName="seg_0" id="5F4F0AE1-FE79-E6A9-A093-DA15205B7779">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 03:07:13 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<schemaObject>B0B69BE3-52E7-1AB9-AAE1-0A251C522935</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COUNTRY_SUBREGION" id="1443A0F1-C857-9974-DCBC-62ECA113AFF5">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 03:07:13 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_TOTAL" id="1C0F7FED-7649-C74C-D46A-D3A3BC4EBE49">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 03:07:13 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_SUBREGION_ID" id="237774AC-E9CB-4D38-453B-50FD631C1FF0">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 03:07:13 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_NAME" id="29E219D0-555A-5CD4-D3D7-DF3AF692486D">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 03:07:13 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_ISO_CODE" id="3739B76C-2946-ED63-3060-159086B22390">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 03:07:13 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_REGION_ID" id="65BC949C-708A-8A18-D394-D61FAA70C0BA">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 03:07:13 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_TOTAL_ID" id="6A278413-9BF5-A6FD-7CF7-A03B9BEA70DE">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 03:07:13 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_NAME_HIST" id="8877967A-A545-0E39-D6C9-9CCFE46A82F2">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 03:07:13 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_ID" id="AC9BBADB-8F1D-6ED0-3E7C-74E7619A1F88">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 03:07:13 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COUNTRY_REGION" id="E4065609-1DB2-F5C0-F817-392BA60363DB">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 03:07:13 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="COUNTRIES_PK" id="793F105C-67D0-05DB-CAFE-BAD058995B80">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 03:07:13 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

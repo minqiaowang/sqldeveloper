@@ -391,7 +391,7 @@
 	<model_compare_storage_props_filter>
 	</model_compare_storage_props_filter>
 	<naming_options>
-		<model_options objectid="F22F8C6D-6170-CA18-F1C9-DACF015A6CE1">
+		<model_options objectid="743E8723-BB47-725E-E8E8-EB60369776A6">
 			<naming_option class_name="oracle.dbtools.crest.model.design.relational.Table" max_name_length="128" case_type="2" valid_characters="" all_valid="true" />
 			<naming_option class_name="oracle.dbtools.crest.model.design.relational.Column" max_name_length="128" case_type="2" valid_characters="" all_valid="true" />
 			<naming_option class_name="oracle.dbtools.crest.model.design.relational.TableView" max_name_length="128" case_type="2" valid_characters="" all_valid="true" />
@@ -399,7 +399,7 @@
 			<naming_option class_name="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" max_name_length="128" case_type="2" valid_characters="" all_valid="true" />
 			<naming_option class_name="oracle.dbtools.crest.model.design.relational.Index" max_name_length="128" case_type="2" valid_characters="" all_valid="true" />
 		</model_options>
-		<model_options objectid="51576EA2-CECC-9D74-7982-73A266CC55FF">
+		<model_options objectid="232BCD2D-E844-5ADB-C04E-FB561F9E1FD0">
 			<naming_option class_name="oracle.dbtools.crest.model.design.logical.Entity" max_name_length="254" case_type="2" valid_characters="" all_valid="true" />
 			<naming_option class_name="oracle.dbtools.crest.model.design.logical.Attribute" max_name_length="254" case_type="2" valid_characters="" all_valid="true" />
 			<naming_option class_name="oracle.dbtools.crest.model.design.logical.EntityView" max_name_length="254" case_type="2" valid_characters="" all_valid="true" />
@@ -431,7 +431,7 @@
 				<subviews value="70"/>
 				<arcs value="70"/>
 				<physical_models_estimates>
-							<physical_model_F22F8C6D-6170-CA18-F1C9-DACF015A6CE1_Oracle_Database_12cR2>
+							<physical_model_743E8723-BB47-725E-E8E8-EB60369776A6_Oracle_Database_12cR2>
 								<physical_model_name value="Oracle Database 12cR2"/>
 								<clusters value="70"/>
 								<contexts value="70"/>
@@ -458,7 +458,35 @@
 								<users value="70"/>
 								<views value="70"/>
 								<triggers value="70"/>
-							</physical_model_F22F8C6D-6170-CA18-F1C9-DACF015A6CE1_Oracle_Database_12cR2>
+							</physical_model_743E8723-BB47-725E-E8E8-EB60369776A6_Oracle_Database_12cR2>
+							<physical_model_743E8723-BB47-725E-E8E8-EB60369776A6_Oracle_Database_12c>
+								<physical_model_name value="Oracle Database 12c"/>
+								<clusters value="70"/>
+								<contexts value="70"/>
+								<dBs value="70"/>
+								<dimensions value="70"/>
+								<directories value="70"/>
+								<diskGroups value="70"/>
+								<externalTables value="70"/>
+								<snapshots value="70"/>
+								<roles value="70"/>
+								<rollbackSegments value="70"/>
+								<segments value="70"/>
+								<sequences value="70"/>
+								<storedProcedures value="70"/>
+								<functions value="70"/>
+								<packages value="70"/>
+								<collectionTypes value="70"/>
+								<structuredTypes value="70"/>
+								<synonyms value="70"/>
+								<tables value="70"/>
+								<tableSpaces value="70"/>
+								<temporaryTableSpaces value="70"/>
+								<undoTableSpaces value="70"/>
+								<users value="70"/>
+								<views value="70"/>
+								<triggers value="70"/>
+							</physical_model_743E8723-BB47-725E-E8E8-EB60369776A6_Oracle_Database_12c>
 				</physical_models_estimates>
 			</relational_model_0_estimates>
 		</relational_model_estimates>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C2D780F1-35D7-3219-EC65-BA95614EB7AA" containerWithKeyObject="78D6408C-2975-DB60-F03B-DC66731CD512" localFKIndex="CCBA5000-1A0C-78CD-4B45-BFA4BB7159CD" name="COSTS_TIMES_FK">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SH</sourceObjSchema>
+<sourceObjName>COSTS_TIME_FK</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:28 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<referredTableLongName>SH.TIMES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2192FC3C-6321-A93D-B746-F28134D8D89B</referredTableID>
+<keyObject>7B8A339A-FAD6-48E6-D5E6-012601D275CD</keyObject>
+<referredKeyID>7B8A339A-FAD6-48E6-D5E6-012601D275CD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>TIME_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

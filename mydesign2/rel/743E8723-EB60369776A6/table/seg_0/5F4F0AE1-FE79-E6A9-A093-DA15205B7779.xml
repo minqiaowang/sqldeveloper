@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5F4F0AE1-FE79-E6A9-A093-DA15205B7779" schemaObject="B0B69BE3-52E7-1AB9-AAE1-0A251C522935" name="COUNTRIES">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SH</sourceObjSchema>
+<sourceObjName>COUNTRIES</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[country dimension table (snowflake)]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COUNTRY_ID" id="AC9BBADB-8F1D-6ED0-3E7C-74E7619A1F88">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[primary key]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_ISO_CODE" id="3739B76C-2946-ED63-3060-159086B22390">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_ISO_CODE</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_NAME" id="29E219D0-555A-5CD4-D3D7-DF3AF692486D">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_NAME</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[country name]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_SUBREGION" id="1443A0F1-C857-9974-DCBC-62ECA113AFF5">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_SUBREGION</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. Western Europe, to allow hierarchies]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_SUBREGION_ID" id="237774AC-E9CB-4D38-453B-50FD631C1FF0">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_SUBREGION_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_REGION" id="E4065609-1DB2-F5C0-F817-392BA60363DB">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_REGION</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[e.g. Europe, Asia]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_REGION_ID" id="65BC949C-708A-8A18-D394-D61FAA70C0BA">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_REGION_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_TOTAL" id="1C0F7FED-7649-C74C-D46A-D3A3BC4EBE49">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_TOTAL</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 BYTE</dataTypeSize>
+<ownDataTypeParameters>11 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_TOTAL_ID" id="6A278413-9BF5-A6FD-7CF7-A03B9BEA70DE">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_TOTAL_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_NAME_HIST" id="8877967A-A545-0E39-D6C9-9CCFE46A82F2">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>COUNTRIES</sourceObjSchema>
+<sourceObjName>COUNTRY_NAME_HIST</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="793F105C-67D0-05DB-CAFE-BAD058995B80" name="COUNTRIES_PK">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SH</sourceObjSchema>
+<sourceObjName>COUNTRIES_PK</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:27 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC9BBADB-8F1D-6ED0-3E7C-74E7619A1F88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

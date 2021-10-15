@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="COSTS_CHANNEL_FK" directorySegmentName="seg_0" id="E712023C-BAF7-DC34-F914-BD8B452805BB">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:56:09 UTC</createdTime>
+<generatorID>4D9FE686-089C-AA8B-61E6-D04D6D3C6EAA</generatorID>
+<ownerDesignName>mydesign2</ownerDesignName>
+<engineerTo>
+<item key="743E8723-BB47-725E-E8E8-EB60369776A6" value="true"/>
+</engineerTo>
+<sourcePk>44222F75-E34B-5318-FCE5-620A2C3C2848</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>02F98E75-4C01-344E-8D24-FF28B737F124</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>903C124E-95A5-C491-F388-2882524A9421</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64242158-A570-2738-A754-76D5777B17E8" schemaObject="B0B69BE3-52E7-1AB9-AAE1-0A251C522935" name="SALES">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SH</sourceObjSchema>
+<sourceObjName>SALES</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[facts table, without a primary key; all rows are uniquely identified by the combination of all foreign keys]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUCTS_PROD_ID" id="39F46B76-F0EE-AB5D-9B4D-3E3638CF15F7">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>PROD_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK to the products dimension table]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A937991D-A150-5AE7-AA98-0FD83E585937" referredColumn="79146750-62CF-16E4-9669-A2071B3A5B71"/>
+</associations>
+</Column>
+<Column name="CUSTOMERS_CUST_ID" id="CEA75FBF-07CC-69CA-28DD-AC317919CE33">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>CUST_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK to the customers dimension table]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="142A71EF-4C82-376C-5A46-0A826F106DB3" referredColumn="BA114C96-FE83-8351-BE41-34DD725F3B0E"/>
+</associations>
+</Column>
+<Column name="TIMES_TIME_ID" id="A7464A4F-209D-AC7D-CD7F-DF36A38F53C6">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>TIME_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK to the times dimension table]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B3A96748-ADE7-8B9D-75DA-19145DF6A00A" referredColumn="873B7C55-1381-7075-D037-F00174466A77"/>
+</associations>
+</Column>
+<Column name="CHANNELS_CHANNEL_ID" id="EABB18EB-F8DB-0F7F-81E1-477874902B80">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>CHANNEL_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[FK to the channels dimension table]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD9E2541-BC3A-B9A0-F063-10B8DF81C67D" referredColumn="229616D0-2B5E-4975-23CD-0B6AFB1D5E3D"/>
+</associations>
+</Column>
+<Column name="PROMO_ID" id="1ABA0DB7-97DA-D34F-1E53-C68341500DF3">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>PROMO_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[promotion identifier, without FK constraint (intentionally) to show outer join optimization]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUANTITY_SOLD" id="A4C9542A-403B-18AD-21AB-6C5D73537304">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>QUANTITY_SOLD</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[product quantity sold with the transaction]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AMOUNT_SOLD" id="65C512C5-DD39-66B0-D841-F953EB2BDE78">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SALES</sourceObjSchema>
+<sourceObjName>AMOUNT_SOLD</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[invoiced amount to the customer]]></commentInRDBMS>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0BCEF90A-AE05-29EB-C8B8-EC0A3D270FCB" name="SALES_CHANNELS_FK">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:28 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EABB18EB-F8DB-0F7F-81E1-477874902B80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD727574-28E6-0041-A8AD-8C0605A09C24" name="SALES_CUSTOMERS_FK">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:28 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEA75FBF-07CC-69CA-28DD-AC317919CE33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83C70705-ECB2-0190-7D17-806B8182A1BB" name="SALES_PRODUCTS_FK">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:28 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39F46B76-F0EE-AB5D-9B4D-3E3638CF15F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87E3B05C-8D68-73AA-64B9-20D62F3CCF66" name="SALES_TIMES_FK">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:28 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7464A4F-209D-AC7D-CD7F-DF36A38F53C6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

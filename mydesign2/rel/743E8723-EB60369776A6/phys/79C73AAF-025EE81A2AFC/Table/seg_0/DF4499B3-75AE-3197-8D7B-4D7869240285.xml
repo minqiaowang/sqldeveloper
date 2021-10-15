@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SUPPLEMENTARY_DEMOGRAPHICS" directorySegmentName="seg_0" id="DF4499B3-75AE-3197-8D7B-4D7869240285">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:24 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<schemaObject>B0B69BE3-52E7-1AB9-AAE1-0A251C522935</schemaObject>
+<dataSegmentCompression>YES</dataSegmentCompression>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8976C000-8A92-4A8F-8CD8-F01EC839293D</segment>
+<tableSpace>D18717D2-3744-2C4F-D48C-E7E1FB8AAA56</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<compressionType>QUERY HIGH</compressionType>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EDUCATION" id="046442B7-AE57-6309-B75C-5ADCB5143EBC">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUST_ID" id="0D3AA574-6384-D3F5-05DB-71E352E08F10">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OCCUPATION" id="182D44E8-574E-CC09-0556-24B954830286">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="YRS_RESIDENCE" id="1EB0FD57-1208-8359-AE78-AF7491C6BE4F">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BOOKKEEPING_APPLICATION" id="2194FB86-D9E3-01A4-D8BE-367094B38898">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BULK_PACK_DISKETTES" id="3334DB6A-0127-AADD-E10A-6837D1F5A032">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRINTER_SUPPLIES" id="40516336-76F4-0BFA-FBA5-55EA8964F69C">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OS_DOC_SET_KANJI" id="421BBD51-186A-101F-FFD2-7BD3B46039A5">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HOUSEHOLD_SIZE" id="4B19C12C-8AA1-45A4-D6EA-E3BFF554F8D8">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMMENTS" id="5B21C8B8-B678-DFC8-8881-B7C51F305EA4">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AFFINITY_CARD" id="B3182AD6-5CC6-AB4D-B420-D92F60A9A8D3">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Y_BOX_GAMES" id="CB4BDC30-4477-AF74-FD8B-5EDD07A5262F">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FLAT_PANEL_MONITOR" id="DC2471FC-8071-DE0F-4660-136EA8AC41BC">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HOME_THEATER_PACKAGE" id="F8A4C8C5-E4D2-A7D7-3EBE-7825DCBCE3AB">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SUPPLEMENTARY_DEMOGRAPHICS_PK" id="CA78B225-911C-D6E2-4479-428A936DFAC1">
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:27 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<tableSpace>D18717D2-3744-2C4F-D48C-E7E1FB8AAA56</tableSpace>
+<enable>NO</enable>
+<indexSort>SORTED</indexSort>
+<rely>YES</rely>
+<validate>NO</validate>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

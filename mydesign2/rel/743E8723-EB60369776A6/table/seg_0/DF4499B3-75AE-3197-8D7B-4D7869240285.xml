@@ -1,0 +1,245 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DF4499B3-75AE-3197-8D7B-4D7869240285" schemaObject="B0B69BE3-52E7-1AB9-AAE1-0A251C522935" name="SUPPLEMENTARY_DEMOGRAPHICS">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SH</sourceObjSchema>
+<sourceObjName>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:24 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUST_ID" id="0D3AA574-6384-D3F5-05DB-71E352E08F10">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>CUST_ID</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EDUCATION" id="046442B7-AE57-6309-B75C-5ADCB5143EBC">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>EDUCATION</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>21 BYTE</dataTypeSize>
+<ownDataTypeParameters>21 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OCCUPATION" id="182D44E8-574E-CC09-0556-24B954830286">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>OCCUPATION</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>21 BYTE</dataTypeSize>
+<ownDataTypeParameters>21 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOUSEHOLD_SIZE" id="4B19C12C-8AA1-45A4-D6EA-E3BFF554F8D8">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>HOUSEHOLD_SIZE</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>21 BYTE</dataTypeSize>
+<ownDataTypeParameters>21 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YRS_RESIDENCE" id="1EB0FD57-1208-8359-AE78-AF7491C6BE4F">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>YRS_RESIDENCE</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AFFINITY_CARD" id="B3182AD6-5CC6-AB4D-B420-D92F60A9A8D3">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>AFFINITY_CARD</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BULK_PACK_DISKETTES" id="3334DB6A-0127-AADD-E10A-6837D1F5A032">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>BULK_PACK_DISKETTES</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FLAT_PANEL_MONITOR" id="DC2471FC-8071-DE0F-4660-136EA8AC41BC">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>FLAT_PANEL_MONITOR</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOME_THEATER_PACKAGE" id="F8A4C8C5-E4D2-A7D7-3EBE-7825DCBCE3AB">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>HOME_THEATER_PACKAGE</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BOOKKEEPING_APPLICATION" id="2194FB86-D9E3-01A4-D8BE-367094B38898">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>BOOKKEEPING_APPLICATION</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRINTER_SUPPLIES" id="40516336-76F4-0BFA-FBA5-55EA8964F69C">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>PRINTER_SUPPLIES</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Y_BOX_GAMES" id="CB4BDC30-4477-AF74-FD8B-5EDD07A5262F">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>Y_BOX_GAMES</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OS_DOC_SET_KANJI" id="421BBD51-186A-101F-FFD2-7BD3B46039A5">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>OS_DOC_SET_KANJI</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMENTS" id="5B21C8B8-B678-DFC8-8881-B7C51F305EA4">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SUPPLEMENTARY_DEMOGRAPHICS</sourceObjSchema>
+<sourceObjName>COMMENTS</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:25 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA78B225-911C-D6E2-4479-428A936DFAC1" name="SUPPLEMENTARY_DEMOGRAPHICS_PK">
+<sourceConnName>adw</sourceConnName>
+<sourceObjSchema>SH</sourceObjSchema>
+<sourceObjName>SUPP_DEMO_PK</sourceObjName>
+<createdBy>minqiao</createdBy>
+<createdTime>2021-10-15 02:55:27 UTC</createdTime>
+<ownerDesignName>mydesign2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D3AA574-6384-D3F5-05DB-71E352E08F10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
